@@ -5,7 +5,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/students")
+    fetch("https://mern-student-app-341r.onrender.com/api/students")
       .then((response) => response.json())
       .then((data) => {
         setStudents(data);
